@@ -1,4 +1,3 @@
-# Will enforce FIPS on all .exe.config files
 <#
     .SYNOPSIS
         Enforces FIPS compliance on all application config files.
@@ -26,7 +25,7 @@
     .PARAMETER Path
         DEFAULT: C:\
         Path you would like to enumerate (This will be recursive).
-    .PARAMETER AllDDrives
+    .PARAMETER AllDrives
         If specified will enforce FIPS on all drives from the root of each recursively.
     .EXAMPLE
         Invoke-FIPSCompliance         

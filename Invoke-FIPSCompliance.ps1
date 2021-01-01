@@ -52,7 +52,7 @@ if ($AllDrives) {
         ForEach ($f in $files) {
             Try {
                 if (-NOT($f -like "*KeePass*")) {
-                    # (Get-Content -path $i -Raw) -replace '<enforceFIPSPolicy enabled="false"/>','<enforceFIPSPolicy enabled="true"/>' | Set-Content -Path $i
+                    (Get-Content -path $i -Raw) -replace '<enforceFIPSPolicy enabled="false"/>','<enforceFIPSPolicy enabled="true"/>' | Set-Content -Path $i
                 }
             }
             Catch {
@@ -70,7 +70,7 @@ $files = @(Get-ChildItem -Path "$($Path)*.exe.config" -Recurse -ErrorAction Sile
 ForEach ($f in $files) {
     Try {
         if (-NOT($f -like "*KeePass*")) {
-            # (Get-Content -path $i -Raw) -replace '<enforceFIPSPolicy enabled="false"/>','<enforceFIPSPolicy enabled="true"/>' | Set-Content -Path $i
+            (Get-Content -path $i -Raw) -replace '<enforceFIPSPolicy enabled="false"/>','<enforceFIPSPolicy enabled="true"/>' | Set-Content -Path $i
         }
     }
     Catch {

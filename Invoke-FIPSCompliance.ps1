@@ -36,8 +36,7 @@
 #>
 
 param (
-    [ValidateCount(0, 1)]
-    [String[]] $Path = 'C:\',
+    [String] $Path = 'C:\',
 
     [switch] $AllDrives
 )

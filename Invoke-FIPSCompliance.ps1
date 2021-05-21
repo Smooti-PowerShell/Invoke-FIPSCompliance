@@ -2,6 +2,10 @@
     .SYNOPSIS
         Enforces FIPS compliance on all application config files.
     .NOTES
+        Version:        1.0
+        Author:         Robert Owens
+        Creation Date:  01/03/2021
+        
         V-30926 - The .NET CLR must be configured to use FIPS approved encryption modules.
 
         Description - FIPS encryption is configured via .NET configuration files. There are numerous configuration files

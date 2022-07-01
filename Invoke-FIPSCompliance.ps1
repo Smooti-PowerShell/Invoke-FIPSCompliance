@@ -30,7 +30,7 @@
         DEFAULT: C:\
         Path you would like to enumerate (This will be recursive).
     .PARAMETER AllDrives
-        If specified will enforce FIPS on all drives from the root of each recursively.
+        If specified will enforce FIPS on all FIXED drives from the root of each recursively.
     .EXAMPLE
         Invoke-FIPSCompliance         
     .EXAMPLE
